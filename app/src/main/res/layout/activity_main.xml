@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/llDiceRoller"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llDiceRoller"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_for_vertical_center"
     tools:context=".MainActivity">
 
 
-<!--    You prefer not to show dice when the app is launched, so you use the empty_dice-->
-<!--    'tools' Namespace is used for preview, it will be gone when the code is compiled-->
+    <!--    You prefer not to show dice when the app is launched, so you use the empty_dice-->
+    <!--    'tools' Namespace is used for preview, it will be gone when the code is compiled-->
     <ImageView
         android:id="@+id/ivDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/empty_dice"
-        tools:src="@drawable/dice_1"/>
+        tools:src="@drawable/dice_1" />
 
-    <Button
+    <TextView
         android:id="@+id/btnRoll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/roll"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textSize="@dimen/btn_size"
+        android:textColor="@color/white"
+        android:background="@color/dark_grey"
+        android:padding="@dimen/small_padding"
+        android:text="@string/roll" />
+
+    <Button
+        android:id="@+id/btnHiddenRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:background="@android:color/transparent" />
 
 
 </LinearLayout>

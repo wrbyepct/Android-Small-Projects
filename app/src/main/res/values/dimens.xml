@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="margin_for_vertical_center">200dp</dimen>
+    <dimen name="small_padding">6dp</dimen>
+    <dimen name="btn_size">20sp</dimen>
+</resources>
